@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mycontainer {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+a,
+ul,
+ol {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+nav .mycontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .mycontainer ul {
+  display: flex;
+  gap: 20px;
+}
+nav .mycontainer ul i {
+  transform: rotateZ(-90deg);
+}
+nav .mycontainer ul a {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  nav .mycontainer ul .myblog {
+    position: relative;
+  }
+  nav .mycontainer ul .myblog i {
+    transform: rotateZ(-90deg);
+  }
+  nav .mycontainer ul .myblog .Detals {
+    opacity: 0;
+    height: auto;
+    top: 100px;
+    position: absolute;
+    display: block;
+    transition: 0.3s;
+    padding: 20px;
+  }
+  nav .mycontainer ul .myblog .Detals a {
+    color: black;
+  }
+  nav .mycontainer ul .myblog:hover .Detals {
+    top: 40px;
+    opacity: 1;
+    background-color: white;
+  }
+  nav .mycontainer ul .Pages {
+    position: relative;
+  }
+  nav .mycontainer ul .Pages i {
+    transform: rotateZ(-90deg);
+  }
+  nav .mycontainer ul .Pages .porfol {
+    opacity: 0;
+    height: auto;
+    top: 100px;
+    position: absolute;
+    display: block;
+    transition: 0.3s;
+    padding: 20px;
+  }
+  nav .mycontainer ul .Pages .porfol a {
+    color: black;
+  }
+  nav .mycontainer ul .Pages:hover .porfol {
+    top: 40px;
+    opacity: 1;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .mycontainer ul .porfol {
+    display: none;
+  }
+  nav .mycontainer ul .Detals {
+    display: none;
+  }
+  nav .mycontainer ul .clicknex {
+    display: block;
+    background-color: white;
+    width: 30%;
+  }
+  nav .mycontainer ul .clicknex a {
+    color: black;
+  }
+}
+nav .mycontainer .myicons p {
+  padding-bottom: 10px;
+  border-bottom: 2px solid blue;
+}
+nav .mycontainer .myicons p a {
+  color: white;
+  font-size: 24px;
+}
+nav .mycontainer .bars {
+  display: none;
+  font-size: 32px;
+}
+nav .mycontainer .bars i {
+  color: green;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  nav .mycontainer .myicons {
+    display: none;
+  }
+  nav .mycontainer .myul {
+    display: none;
+  }
+  nav .mycontainer .myul li {
+    padding: 10px;
+  }
+  nav .mycontainer .display {
+    overflow: auto;
+    display: block;
+    position: absolute;
+    background-color: rgb(14, 12, 12);
+    width: 90%;
+    margin: 0 5%;
+    top: 100px;
+    padding: 20px;
+  }
+  nav .mycontainer .bars {
+    display: block;
+    position: absolute;
+    background-color: rgb(49, 46, 46);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 97%;
+    top: 60px;
+    left: 10px;
+  }
+  nav .mycontainer .bars p {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+  }
+  nav .mycontainer .bars p i {
+    color: white;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav .mycontainer .bars {
+    left: 0;
+  }
+}
+main .Showcase {
+  background-image: url(https://preview.colorlib.com/theme/startup2/img/banner/banner.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+main .Showcase .mycontainer .Courses {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 60%;
+}
+main .Showcase .mycontainer .Courses h1 {
+  color: white;
+  font-size: 56px;
+}
+main .Showcase .mycontainer .Courses .Get-start {
+  padding: 15px 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 4, 75);
+  max-width: 200px;
+  border: 0;
+  border-radius: 20px;
+  transition: 0.3s;
+  width: 100%;
+  border: 1px solid rgb(58, 4, 75);
+}
+main .Showcase .mycontainer .Courses .Get-start:hover {
+  color: white;
+  background: none;
+  border: 1px solid white;
+  transform: rotateY(-10deg);
+}
+@media screen and (max-width: 1000px) {
+  main .Showcase {
+    background-size: 200%;
+  }
+  main .Showcase .mycontainer {
+    padding: 2%;
+  }
+  main .Showcase .mycontainer .Courses {
+    gap: 10px;
+  }
+  main .Showcase .mycontainer .Courses .first {
+    font-size: 16px;
+  }
+  main .Showcase .mycontainer .Courses h1 {
+    font-size: 32px;
+  }
+  main .Showcase .mycontainer .Courses .lorem {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .Showcase {
+    background-size: 200%;
+    align-items: start;
+  }
+  main .Showcase .mycontainer {
+    padding: 2%;
+    padding-top: 100px;
+  }
+  main .Showcase .mycontainer .Courses {
+    gap: 10px;
+  }
+  main .Showcase .mycontainer .Courses .first {
+    font-size: 16px;
+  }
+  main .Showcase .mycontainer .Courses h1 {
+    font-size: 12px;
+  }
+  main .Showcase .mycontainer .Courses .lorem {
+    font-size: 12px;
+  }
+  main .Showcase .mycontainer .Courses .Get-start {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+main .myapi .mycontainer {
+  padding-top: 100px;
+}
+main .myapi .mycontainer .servic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .myapi .mycontainer .servic p {
+  color: rgb(0, 204, 255);
+}
+main .myapi .mycontainer .servic h2 {
+  font-size: 32px;
+  max-width: 400px;
+  text-align: center;
+}
+main .myapi .mycontainer .mycard {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+main .myapi .mycontainer .mycard .newcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  transition: 0.2s;
+  padding: 40px;
+  gap: 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(114, 113, 113, 0.623);
+}
+main .myapi .mycontainer .mycard .newcard div {
+  display: flex;
+  gap: 5px;
+}
+main .myapi .mycontainer .mycard .newcard button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 0;
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+}
+main .myapi .mycontainer .mycard .newcard button:hover {
+  background-color: rgba(5, 60, 77, 0.603);
+  color: white;
+}
+main .myapi .mycontainer .mycard .newcard img {
+  max-width: 80px;
+}
+main .myapi .mycontainer .mycard .newcard p {
+  text-align: center;
+}
+main .myapi .mycontainer .mycard .newcard:hover {
+  border: 2px solid rgb(0, 204, 255);
+}
+@media screen and (max-width: 768px) {
+  main .myapi .mycontainer .mycard {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  main .myapi .mycontainer .mycard .newcard {
+    max-width: 400px;
+    padding: 20px 0;
+  }
+}
+main .About {
+  display: flex;
+  justify-content: space-between;
+}
+main .About .myimg-left {
+  width: 50%;
+  height: auto;
+}
+main .About .myimg-left img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  main .About .myimg-left {
+    display: none;
+  }
+}
+main .About .empower {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: black;
+  width: 50%;
+  height: auto;
+  padding: 0 100px;
+  gap: 30px;
+  overflow: hidden;
+}
+main .About .empower .myfirst {
+  color: white;
+}
+main .About .empower h2 {
+  color: white;
+  font-size: 32px;
+}
+main .About .empower .lorem {
+  color: rgba(255, 255, 255, 0.582);
+}
+main .About .empower .mybtn {
+  padding: 15px 30px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: rgba(57, 4, 204, 0.808);
+  transition: 0.3s;
+}
+main .About .empower .mybtn:hover {
+  background-color: white;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  main .About .empower {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+main .team .mycontainer {
+  padding: 200px 0;
+}
+main .team .mycontainer .creative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .team .mycontainer .creative h2 {
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+main .team .mycontainer .creative p {
+  font-size: 16px;
+  max-width: 400px;
+  text-align: center;
+  color: rgba(71, 69, 67, 0.671);
+}
+main .team .mycontainer .my-imgcard {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .team .mycontainer .my-imgcard .card .mens {
+  position: relative;
+  overflow: hidden;
+}
+main .team .mycontainer .my-imgcard .card .mens img {
+  width: 100%;
+}
+main .team .mycontainer .my-imgcard .card .mens .icons {
+  opacity: 0;
+  position: absolute;
+  top: 500px;
+  transition: 0.4s;
+}
+main .team .mycontainer .my-imgcard .card .mens .icons i {
+  margin: 0 20px;
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+  background-color: rgb(4, 66, 180);
+}
+main .team .mycontainer .my-imgcard .card .mens:hover .icons {
+  opacity: 1;
+  top: 250px;
+}
+main .team .mycontainer .my-imgcard .card .myptag h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+main .team .mycontainer .my-imgcard .card .myptag p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.521);
+}
+@media screen and (max-width: 768px) {
+  main .team .mycontainer .my-imgcard {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  gap: 20px;
+}
+form input {
+  padding: 5px 20px;
+}
+form button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+form button:hover {
+  background-color: rgb(3, 70, 70);
+  color: white;
+}
+
+footer {
+  background-color: black;
+  padding: 50px 0;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer p span {
+  color: blue;
+  cursor: pointer;
+}

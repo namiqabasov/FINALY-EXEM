@@ -1,0 +1,302 @@
+main {
+  .Showcase {
+    background-image: url(https://preview.colorlib.com/theme/startup2/img/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    .mycontainer {
+      .Courses {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 60%;
+
+        h1 {
+          color: white;
+          font-size: 56px;
+        }
+
+        .Get-start {
+          padding: 15px 30px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(58, 4, 75);
+          max-width: 200px;
+          border: 0;
+          border-radius: 20px;
+          transition: 0.3s;
+          width: 100%;
+          border: 1px solid rgb(58, 4, 75);
+
+          &:hover {
+            color: white;
+            background: none;
+            border: 1px solid white;
+            transform: rotateY(-10deg);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .Showcase {
+      background-size: 200%;
+
+      .mycontainer {
+        padding: 2%;
+        .Courses {
+          gap: 10px;
+          .first {
+            font-size: 16px;
+          }
+          h1 {
+            font-size: 32px;
+          }
+
+          .lorem {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .Showcase {
+      background-size: 200%;
+      align-items: start;
+      .mycontainer {
+        padding: 2%;
+        padding-top: 100px;
+        .Courses {
+          gap: 10px;
+          .first {
+            font-size: 16px;
+          }
+          h1 {
+            font-size: 12px;
+          }
+
+          .lorem {
+            font-size: 12px;
+          }
+          .Get-start {
+            padding: 12px 20px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .myapi {
+    .mycontainer {
+      padding-top: 100px;
+      .servic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        p {
+          color: rgb(0, 204, 255);
+        }
+        h2 {
+          font-size: 32px;
+          max-width: 400px;
+          text-align: center;
+        }
+      }
+      .mycard {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        .newcard {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 250px;
+          transition: 0.2s;
+          padding: 40px;
+          gap: 30px;
+          border-radius: 5px;
+          border: 2px solid rgba(114, 113, 113, 0.623);
+          div {
+            display: flex;
+            gap: 5px;
+          }
+          button {
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 0;
+            color: black;
+            background-color: white;
+            transition: 0.3s;
+
+            &:hover {
+              background-color: rgba(5, 60, 77, 0.603);
+              color: white;
+            }
+          }
+          img {
+            max-width: 80px;
+          }
+          p {
+            text-align: center;
+          }
+
+          &:hover {
+            border: 2px solid rgb(0, 204, 255);
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .mycontainer {
+        .mycard {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          .newcard {
+            max-width: 400px;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .About {
+    display: flex;
+    justify-content: space-between;
+
+    .myimg-left {
+      width: 50%;
+      height: auto;
+      img {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .myimg-left {
+        display: none;
+      }
+    }
+    .empower {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      background-color: black;
+      width: 50%;
+      height: auto;
+      padding: 0 100px;
+      gap: 30px;
+      overflow: hidden;
+      .myfirst {
+        color: white;
+      }
+
+      h2 {
+        color: white;
+        font-size: 32px;
+      }
+      .lorem {
+        color: rgba(255, 255, 255, 0.582);
+      }
+
+      .mybtn {
+        padding: 15px 30px;
+        color: white;
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: rgba(57, 4, 204, 0.808);
+        transition: 0.3s;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .empower {
+        width: 100%;
+        padding: 20px 0;
+      }
+    }
+  }
+
+  .team {
+    .mycontainer {
+      padding: 200px 0;
+      .creative {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 32px;
+          padding-bottom: 20px;
+        }
+        p {
+          font-size: 16px;
+          max-width: 400px;
+          text-align: center;
+          color: rgba(71, 69, 67, 0.671);
+        }
+      }
+      .my-imgcard {
+        padding: 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card {
+          .mens {
+            position: relative;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+            .icons {
+              opacity: 0;
+              position: absolute;
+              top: 500px;
+              i {
+                margin: 0 20px;
+                border-radius: 50%;
+                color: white;
+                padding: 10px;
+                background-color: rgb(4, 66, 180);
+              }
+              transition: 0.4s;
+            }
+            &:hover {
+              .icons {
+                opacity: 1;
+                top: 250px;
+              }
+            }
+          }
+          .myptag {
+            h3 {
+              text-align: center;
+              padding: 20px 0;
+            }
+            p {
+              text-align: center;
+              color: rgba(0, 0, 0, 0.521);
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .my-imgcard {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
