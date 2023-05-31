@@ -5,6 +5,8 @@ const porfol = document.querySelector(".porfol");
 const myblog = document.querySelector(".myblog");
 const Pages = document.querySelector(".Pages");
 
+// responsiv navbar ucun
+
 myblog.addEventListener("click", function () {
   Detals.classList.toggle("clicknex");
 });
@@ -15,6 +17,7 @@ Pages.addEventListener("click", function () {
 bars.addEventListener("click", function () {
   myul.classList.toggle("display");
 });
+// responsiv navbar ucun
 
 const mycard = document.querySelector(".mycard");
 
@@ -100,11 +103,13 @@ function mycreate(data) {
 }
 
 const myform = document.querySelector(".formbtn");
+
 myform.addEventListener("click", () => {
   const id = document.querySelector("#id");
   const myname = document.querySelector("#name");
   const input = document.querySelector("#lorem");
   const img = document.querySelector("#img");
+
   if (id.value === "" || img.value === "" || myname.value === "") {
     alert("MELUMATLARI TAM DAXIL EDIN");
   } else {
