@@ -1,4 +1,6 @@
 main {
+  // Showcase section start
+
   .Showcase {
     background-image: url(https://preview.colorlib.com/theme/startup2/img/banner/banner.png);
     background-repeat: no-repeat;
@@ -89,6 +91,10 @@ main {
     }
   }
 
+  // Showcase section end
+
+  // myapi section start
+
   .myapi {
     .mycontainer {
       padding-top: 100px;
@@ -164,6 +170,8 @@ main {
       }
     }
   }
+  // myapi section end
+  // About section start
 
   .About {
     display: flex;
@@ -226,6 +234,8 @@ main {
       }
     }
   }
+  // About section end
+  // team section start
 
   .team {
     .mycontainer {
@@ -299,4 +309,5 @@ main {
       }
     }
   }
+  // team section end
 }
